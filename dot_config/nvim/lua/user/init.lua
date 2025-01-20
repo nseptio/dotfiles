@@ -1,0 +1,27 @@
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = { "*" }, -- Default to 4 spaces
+--   callback = function()
+--     if
+--       vim.bo.filetype ~= "javascript"
+--       and vim.bo.filetype ~= "typescript"
+--       and vim.bo.filetype ~= "html"
+--       and vim.bo.filetype ~= "css"
+--       and vim.bo.filetype ~= "jsx"
+--       and vim.bo.filetype ~= "tsx"
+--       and vim.bo.filetype ~= "vue"
+--     then
+--       vim.opt.tabstop = 4 -- Number of spaces for a tab
+--       vim.opt.shiftwidth = 4 -- Number of spaces for indentation
+--       vim.opt.expandtab = true -- Use spaces instead of tabs
+--     end
+--   end,
+-- })
+--
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = { "javascript", "typescript", "html", "css", "jsx", "tsx", "vue" }, -- Front-end file types
+--   callback = function()
+--     vim.opt.tabstop = 2 -- Number of spaces for a tab
+--     vim.opt.shiftwidth = 2 -- Number of spaces for indentation
+--     vim.opt.expandtab = true -- Use spaces instead of tabs
+--   end,
+-- })
